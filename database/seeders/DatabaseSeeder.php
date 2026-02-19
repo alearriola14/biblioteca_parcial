@@ -21,9 +21,9 @@ class DatabaseSeeder extends Seeder
         $this->call([
             BooksSeeder::class,
         ]);
-
+//probar con uno desde la seed
         DB::table('loans')->insert([
-            'nombre_solicitante' => 'Juan Pérez',
+            'nombre_solicitante' => 'ale arriola',
             'fecha_hora_prestamo' => now(),
             'referencia' => 'prestamo-001',
             'book_id' => 1, 
